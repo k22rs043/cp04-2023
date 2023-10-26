@@ -5,7 +5,7 @@
 
     }
     button{
-        color: blue;
+        color: rgb(0, 0, 0);
         font-family: Times;
         border-radius: 20px;
     }
@@ -63,23 +63,26 @@
     }
     
     #btnA {
-        background-color: yellow;
-        color: green;
+        background-color: rgba(255, 242, 0, 0.705);
+        color: rgb(0, 0, 0);
         font-size: 20px;
         position:absolute; top:380px; left:2%; width:33%; height:60px; 
     }
     
     #btnB {
+        background-color: rgba(162, 255, 0, 0.781);
         font-size: 20px;
         position:absolute; top:380px; left:35%; width:33%; height:60px; 
     }
 
     #btnC {
+        background-color: rgba(0, 255, 98, 0.781);
         font-size: 30px;
         position:absolute; top:380px; left:68%; width:32%; height:60px; 
     }
 
     #btnD {
+        background-color: rgba(0, 255, 213, 0.781);
         font-size: 30px;
         position:absolute; top:460px; left:2%; width:33%; height:60px; 
     }
@@ -89,6 +92,7 @@
 
 
     #btnE {
+        background-color: rgba(217, 0, 255, 0.436);
         font-size: 30px;
         position:absolute; top:460px; left:35%; width:33%; height:60px; 
     }
@@ -97,6 +101,7 @@
     }
 
     #btnF {
+        background-color: rgba(255, 0, 136, 0.505);
         font-size: 30px;
         position:absolute; top:460px; left:68%; width:32%; height:60px; 
     }
