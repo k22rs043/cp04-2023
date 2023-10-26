@@ -38,6 +38,14 @@
         $('#btnC').click(function(e) {
             btnCClick(e);
         });
+
+        $('#btnD').click(function(e) {
+            btnDClick(e);
+        });
+
+         $('#btnE').click(function(e) {
+            btnEClick(e);
+        });
         init();
     });
     
@@ -160,6 +168,8 @@ var period = 0;
         $('#btnA').prop('disabled', false);
         $('#btnB').prop('disabled', false);
         $('#btnC').prop('disabled', false);
+        $('#btnD').prop('disabled', false);
+        $('#btnE').prop('disabled', false);
         
     }
 
@@ -199,6 +209,20 @@ var period = 0;
         $("#time").html("経過時間:0")
         $("#remain").html("残り時間:" + period);
     }
+     function btnDClick(e){
+         period = 300;
+        $("#time").html("経過時間:0")
+        $("#remain").html("残り時間:" + 300);
+    }
+     function btnEClick(e){
+         period = 180;
+        $("#time").html("経過時間:0")
+        $("#remain").html("残り時間:" + 180);
+    }
+
+    
+
+
     
  
     // 繰り返し実行する処理
@@ -231,6 +255,8 @@ var period = 0;
     <button id="btnA">Start</button>  
     <button id="btnB">Stop</button>  
     <button id="btnC">Set</button>  
+    <button id="btnD">5minutes</button>
+    <button id="btnE">3minutes</button>
     <input type="number" id="minute" value=0 >
     <input type="number" id="second" value=15 >
 </body>
