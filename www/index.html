@@ -227,6 +227,9 @@ var period = 0;
          period = 0;
         $("#time").html("経過時間:0")
         $("#remain").html("残り時間:" + 0);
+        $("body").css("background-color","skyblue");
+        $("#time").css("color","red")
+        $("#remain").css("color","red")
     }
 
     
@@ -247,6 +250,11 @@ var period = 0;
           active = false;
           alarm();
         }
+        if(rest <= 10){
+        $("body").css("background-color","red")
+        $("#time").css("color","#ffffff")
+        $("#remain").css("color","#ffffff")
+        }
 
         
     } 
@@ -256,8 +264,8 @@ var period = 0;
 <body>
     <canvas id="mycanvas" width="200" height="200">Test</canvas>
 
-    <div id="minuteStr">〇</div>
-    <div id="secondStr">〇</div>
+    <div id="minuteStr"></div>
+    <div id="secondStr"></div>
 
     <div id="remain">Remaining time</div>
     <div id="time">Time</div>
